@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Titans of Progress — Grand strategy meets industrial tycoon | Prime Mover Industries</title>
+<meta name="description" content="Grand strategy meets industrial tycoon. Found an electrical company in 1890 and invent, build, trade and litigate your way through an alternate history of American industry.">
+<link rel="canonical" href="https://titansofprogress.com/">
+<meta name="theme-color" content="#2e2b27">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Prime Mover Industries">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://titansofprogress.com/">
+<meta property="og:title" content="Titans of Progress">
+<meta property="og:description" content="Grand strategy meets industrial tycoon. Found an electrical company in 1890 and invent, build, trade and litigate your way through an alternate history of American industry. Can you own the century before Edison, Westinghouse and Morgan do?">
+<meta property="og:image" content="https://titansofprogress.com/media/share-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Titans of Progress: a grand strategy of American industry. The Big Board, 1908: United States Steel's year drawn by a brass integrator through the Panic of 1907.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Titans of Progress">
+<meta name="twitter:description" content="Grand strategy meets industrial tycoon. Found an electrical company in 1890 and own the century before Edison, Westinghouse and Morgan do.">
+<meta name="twitter:image" content="https://titansofprogress.com/media/share-card.jpg">
+<meta name="twitter:image:alt" content="Titans of Progress: a grand strategy of American industry.">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" as="image" href="/media/field-trial-poster.jpg" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Inter:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://primemoverindustries.com/#studio",
+      "name": "Prime Mover Industries",
+      "url": "https://primemoverindustries.com/",
+      "logo": "https://primemoverindustries.com/icon-192.png",
+      "email": "hello@primemoverindustries.com"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://titansofprogress.com/#site",
+      "name": "Titans of Progress",
+      "url": "https://titansofprogress.com/",
+      "publisher": { "@id": "https://primemoverindustries.com/#studio" }
+    },
+    {
+      "@type": "VideoGame",
+      "@id": "https://titansofprogress.com/#game",
+      "name": "Titans of Progress",
+      "url": "https://titansofprogress.com/",
+      "description": "Grand strategy meets industrial tycoon. Found an electrical company in 1890 and invent, build, trade and litigate your way through an alternate history of American industry. Can you own the century before Edison, Westinghouse and Morgan do?",
+      "genre": ["Economic strategy", "Grand strategy", "Business simulation", "Tycoon", "Historical"],
+      "gamePlatform": "PC",
+      "operatingSystem": "Windows 10, Windows 11",
+      "applicationCategory": "Game",
+      "playMode": ["SinglePlayer", "MultiPlayer"],
+      "inLanguage": "en",
+      "author": { "@id": "https://primemoverindustries.com/#studio" },
+      "publisher": { "@id": "https://primemoverindustries.com/#studio" },
+      "image": [
+        "https://titansofprogress.com/media/share-card.jpg",
+        "https://titansofprogress.com/media/laboratory.jpg",
+        "https://titansofprogress.com/media/drawing-office.jpg",
+        "https://titansofprogress.com/media/exchange-1908.jpg"
+      ],
+      "trailer": {
+        "@type": "VideoObject",
+        "name": "A field trial at the proving ground",
+        "description": "In-game footage of Titans of Progress: at the proving ground in January 1890 a gloved hand throws the knife switch, the incandescent lamp lights, and the claim is stamped IT WORKS.",
+        "thumbnailUrl": "https://titansofprogress.com/media/field-trial-poster.jpg",
+        "contentUrl": "https://titansofprogress.com/media/field-trial.mp4",
+        "uploadDate": "2026-10-03"
+      }
+    }
+  ]
+}
+</script>
+<style>
+  :root {
+    --edge: #100e0c;
+    --case: #2e2b27;
+    --case-lit: #383430;
+    --case-foot: #262320;
+    --ink: #eee6d2;
+    --ink-soft: #b9b1a0;
+    --gold: #c9a869;
+    --gold-hi: #f0dcae;
+    --wax: #8e2b21;
+    --wax-hi: #b8452f;
+    --serif: "Libre Caslon Text", Georgia, serif;
+    --sans: Inter, system-ui, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, monospace;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--edge); }
+  body {
+    margin: 0; color: var(--ink); font-family: var(--sans); font-size: 17px; line-height: 1.6;
+    background: radial-gradient(ellipse at top, var(--case-lit) 0%, var(--case) 40%, var(--edge) 100%) fixed;
+  }
+  a { color: var(--gold-hi); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+
+  header.studio {
+    display: flex; justify-content: space-between; align-items: center; gap: 16px;
+    padding: 18px 0; border-bottom: 1px solid #ffffff14;
+    font-family: var(--mono); font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--gold);
+  }
+  header.studio a { color: var(--gold); text-decoration: none; }
+  header.studio nav { display: flex; gap: 22px; }
+  header.studio a:hover, header.studio a:focus-visible { color: var(--gold-hi); }
+
+  .hero { text-align: center; padding: 56px 0 24px; }
+  .kicker { font-family: var(--mono); font-size: 13px; letter-spacing: .3em; text-transform: uppercase; color: var(--gold); }
+  h1 {
+    font-family: var(--serif); font-weight: 700; color: var(--gold-hi); margin: 10px 0 6px;
+    font-size: clamp(40px, 8vw, 84px); line-height: 1.05; letter-spacing: .01em;
+  }
+  .rule { width: min(320px, 60%); height: 1px; margin: 18px auto; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+  .tagline { font-family: var(--serif); font-size: clamp(18px, 2.6vw, 24px); color: var(--ink); margin: 0; }
+
+  .film {
+    margin: 36px auto 0; border: 1px solid var(--gold); border-radius: 4px; padding: 6px;
+    background: var(--edge); box-shadow: 0 24px 60px #000a;
+  }
+  .film video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: 2px; }
+  .film figcaption { font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-soft); padding: 8px 4px 2px; text-align: left; }
+
+  .cta { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin: 32px 0 8px; }
+  .button {
+    display: inline-block; padding: 12px 26px; border-radius: 3px; text-decoration: none;
+    font-family: var(--serif); font-size: 18px; border: 1px solid var(--gold);
+  }
+  .button.primary { background: var(--wax); border-color: var(--wax-hi); color: var(--ink); }
+  .button.primary[aria-disabled="true"] { cursor: default; }
+  .button.secondary { color: var(--gold-hi); background: transparent; }
+  .button.secondary:hover, .button.secondary:focus-visible { background: #c9a86618; }
+  .soon { font-family: var(--mono); font-size: 13px; color: var(--ink-soft); text-align: center; margin: 0; }
+
+  .pitch { max-width: 720px; margin: 64px auto; font-family: var(--serif); font-size: 21px; line-height: 1.65; text-align: center; }
+  .pitch p { margin: 0 0 1em; }
+
+  .feature { display: grid; grid-template-columns: 3fr 2fr; gap: 36px; align-items: center; margin: 72px 0; }
+  .feature.flip { grid-template-columns: 2fr 3fr; }
+  .feature.flip .shot { order: 2; }
+  .shot { margin: 0; border: 1px solid #c9a86966; border-radius: 3px; padding: 4px; background: var(--edge); }
+  .shot img, .shot video { display: block; width: 100%; height: auto; border-radius: 2px; }
+  .feature h2 { font-family: var(--serif); color: var(--gold-hi); font-size: 30px; margin: 0 0 10px; font-weight: 700; line-height: 1.25; }
+  .feature .label { font-family: var(--mono); font-size: 12px; letter-spacing: .25em; text-transform: uppercase; color: var(--gold); }
+  .feature p { color: var(--ink); margin: 0 0 .8em; }
+  .feature p:last-child { margin-bottom: 0; }
+
+  footer {
+    margin-top: 96px; padding: 32px 0 48px; border-top: 1px solid #ffffff14;
+    color: var(--ink-soft); font-size: 14px; text-align: center;
+  }
+  footer .studio-name { font-family: var(--serif); color: var(--gold-hi); font-size: 20px; display: block; margin-bottom: 6px; }
+  footer nav { margin: 0 0 10px; font-family: var(--mono); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; }
+  footer nav a { color: var(--gold); text-decoration: none; margin: 0 10px; }
+
+  .titans { margin: 96px 0; text-align: center; }
+  .titans h2 { font-family: var(--serif); color: var(--gold-hi); font-size: clamp(30px, 4vw, 40px); margin: 8px 0 6px; }
+  .titans .lede { max-width: 680px; margin: 0 auto 36px; color: var(--ink-soft); }
+  .titan-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px 22px; text-align: left; }
+  .titan { margin: 0; }
+  .titan button {
+    display: block; width: 100%; padding: 5px; cursor: pointer; position: relative;
+    background: var(--edge); border: 1px solid var(--gold); border-radius: 3px;
+    box-shadow: 0 0 0 3px var(--edge), 0 0 0 4px #c9a86655;
+  }
+  .titan button:focus-visible { outline: 2px solid var(--gold-hi); outline-offset: 4px; }
+  .titan img { display: block; width: 100%; height: auto; aspect-ratio: 1; border-radius: 2px; }
+  .titan .mood {
+    position: absolute; left: 50%; bottom: 10px; transform: translateX(-50%);
+    font-family: var(--mono); font-size: 11px; letter-spacing: .2em; text-transform: uppercase;
+    color: var(--gold-hi); background: #100e0ccc; padding: 2px 8px; border-radius: 2px; white-space: nowrap;
+  }
+  .titan .role { font-family: var(--mono); font-size: 11px; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); margin: 14px 0 2px; }
+  .titan .name { font-family: var(--serif); color: var(--gold-hi); font-size: 20px; line-height: 1.25; margin: 0; }
+  .titan .years { font-family: var(--mono); font-size: 12px; color: var(--ink-soft); margin: 2px 0 6px; }
+  .titan p.bio { font-size: 15px; line-height: 1.5; margin: 0; color: var(--ink); }
+  .times { margin: 96px 0 0; text-align: center; }
+  .times h2 { font-family: var(--serif); color: var(--gold-hi); font-size: clamp(30px, 4vw, 40px); margin: 8px 0 6px; }
+  .times .lede { max-width: 680px; margin: 0 auto 28px; color: var(--ink-soft); }
+  .era-tabs { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin: 0 0 18px; }
+  .era-tabs button {
+    font-family: var(--mono); font-size: 14px; letter-spacing: .14em; color: var(--gold);
+    background: transparent; border: 1px solid #c9a86966; border-radius: 3px; padding: 8px 16px; cursor: pointer;
+  }
+  .era-tabs button[aria-selected="true"] { color: var(--edge); background: var(--gold); border-color: var(--gold); }
+  .era-tabs button:focus-visible { outline: 2px solid var(--gold-hi); outline-offset: 3px; }
+  .era-stage { position: relative; margin: 0 auto; max-width: min(1000px, calc((100vh - 150px) * 1.16)); aspect-ratio: 1000 / 862; border: 1px solid #c9a86966; border-radius: 3px; padding: 4px; background: var(--edge); box-shadow: 0 24px 60px #000a; }
+  .era-stage img { position: absolute; inset: 4px; width: calc(100% - 8px); height: calc(100% - 8px); border-radius: 2px; opacity: 0; transition: opacity .6s ease; }
+  .era-stage img.on { opacity: 1; }
+  .era-caption { max-width: 640px; margin: 16px auto 0; min-height: 3.2em; color: var(--ink); font-size: 16px; }
+  .era-caption b { font-family: var(--serif); color: var(--gold-hi); font-weight: 700; }
+  @media (prefers-reduced-motion: reduce) { .era-stage img { transition: none; } }
+
+  .questions { margin: 96px auto 0; max-width: 760px; }
+  .questions > h2 { font-family: var(--serif); color: var(--gold-hi); font-size: clamp(30px, 4vw, 40px); margin: 8px 0 28px; text-align: center; }
+  .questions .kicker { text-align: center; }
+  .questions h3 { font-family: var(--serif); color: var(--gold-hi); font-size: 21px; margin: 28px 0 6px; font-weight: 700; }
+  .questions p { margin: 0; }
+
+  @media (max-width: 900px) { .titan-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 760px) {
+    body { font-size: 16px; }
+    .feature, .feature.flip { grid-template-columns: 1fr; gap: 16px; margin: 48px 0; }
+    .feature.flip .shot { order: 0; }
+    .pitch { font-size: 18px; margin: 44px auto; }
+    header.studio { font-size: 11px; letter-spacing: .12em; }
+    header.studio nav { gap: 14px; }
+  }
+  @media (max-width: 420px) { header.studio .home { display: none; } }
+  @media (prefers-reduced-motion: reduce) { .film video { display: none; } .film .still { display: block !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="studio">
+    <a class="home" href="https://primemoverindustries.com/">Prime Mover Industries</a>
+    <nav aria-label="Site">
+      <a href="#questions">Questions</a>
+      <a href="/press/">Press</a>
+      <a href="/support/">Support</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+  <section class="hero">
+    <div class="kicker">A grand strategy of American industry</div>
+    <h1>Titans of Progress</h1>
+    <div class="rule"></div>
+    <p class="tagline">New York, January 1890. Five million dollars, and nobody on the payroll.</p>
+
+    <figure class="film">
+      <video autoplay muted loop playsinline preload="metadata" poster="/media/field-trial-poster.jpg" width="1600" height="900" aria-label="A field trial at the proving ground, January 1890: a gloved hand throws the knife switch, the incandescent lamp lights on the bench, and the claim is stamped IT WORKS.">
+        <source src="/media/field-trial.mp4" type="video/mp4">
+      </video>
+      <img class="still" src="/media/field-trial-poster.jpg" alt="A field trial: the incandescent lamp lit on the bench at the proving ground." width="1600" height="900" style="display:none;width:100%;height:auto">
+      <figcaption>A field trial at the proving ground · in-game footage</figcaption>
+    </figure>
+
+    <div class="cta">
+      <a class="button primary" href="#" aria-disabled="true" title="The Steam page is on its way">Wishlist on Steam</a>
+      <a class="button secondary" href="/contact/?about=steam">Tell me when it’s on Steam</a>
+    </div>
+    <p class="soon">Coming soon to Steam Early Access · Windows</p>
+  </section>
+
+  <section class="pitch">
+    <p>Grand strategy meets industrial tycoon. Found an electrical company in 1890 and invent, build, trade and litigate your way through an alternate history of American industry. Can you own the century before Edison, Westinghouse and Morgan do?</p>
+  </section>
+
+  <section class="titans">
+    <div class="kicker">The Titans</div>
+    <h2>They have tempers, and memories</h2>
+    <p class="lede">The House of Morgan, Standard Oil, Edison, Westinghouse, Carnegie, the Patent Office, the Federal Government and more remember how you dealt with them, and some would rather beat you in court than compete in the free market. The period’s great figures each have a portrait for every mood you can put them in. Hover over one to please him, or tap to see the others.</p>
+    <div class="titan-grid">
+      <figure class="titan" data-id="nikola_tesla" data-moods="pleased guarded anxious angry">
+        <button type="button" aria-label="Nikola Tesla: change his mood">
+          <img src="/media/titans/nikola_tesla_neutral.jpg" alt="Portrait of Nikola Tesla" loading="lazy" width="360" height="360">
+          <span class="mood" hidden></span>
+        </button>
+        <div class="role">The Inventor</div>
+        <h3 class="name">Nikola Tesla</h3>
+        <div class="years">1856–1943</div>
+        <p class="bio">Invented the rotating magnetic field and the polyphase system of alternating current, and licensed them to Westinghouse.</p>
+      </figure>
+      <figure class="titan" data-id="thomas_edison" data-moods="pleased guarded anxious angry">
+        <button type="button" aria-label="Thomas Edison: change his mood">
+          <img src="/media/titans/thomas_edison_neutral.jpg" alt="Portrait of Thomas Edison" loading="lazy" width="360" height="360">
+          <span class="mood" hidden></span>
+        </button>
+        <div class="role">The Wizard of Menlo Park</div>
+        <h3 class="name">Thomas Edison</h3>
+        <div class="years">1847–1931</div>
+        <p class="bio">Made the incandescent lamp practical and built New York’s first power station.</p>
+      </figure>
+      <figure class="titan" data-id="george_westinghouse" data-moods="pleased guarded anxious angry">
+        <button type="button" aria-label="George Westinghouse: change his mood">
+          <img src="/media/titans/george_westinghouse_neutral.jpg" alt="Portrait of George Westinghouse" loading="lazy" width="360" height="360">
+          <span class="mood" hidden></span>
+        </button>
+        <div class="role">The Engineer</div>
+        <h3 class="name">George Westinghouse</h3>
+        <div class="years">1846–1914</div>
+        <p class="bio">Made his name with the air brake. Now he backs alternating current, and Edison says it kills people.</p>
+      </figure>
+      <figure class="titan" data-id="jp_morgan" data-moods="pleased guarded anxious angry">
+        <button type="button" aria-label="J. P. Morgan: change his mood">
+          <img src="/media/titans/jp_morgan_neutral.jpg" alt="Portrait of J. P. Morgan" loading="lazy" width="360" height="360">
+          <span class="mood" hidden></span>
+        </button>
+        <div class="role">The Banker</div>
+        <h3 class="name">J. P. Morgan</h3>
+        <div class="years">1837–1913</div>
+        <p class="bio">Rescues failing railways and takes control of them. On Wall Street his word settles the terms.</p>
+      </figure>
+      <figure class="titan" data-id="john_rockefeller" data-moods="pleased guarded anxious angry">
+        <button type="button" aria-label="John D. Rockefeller: change his mood">
+          <img src="/media/titans/john_rockefeller_neutral.jpg" alt="Portrait of John D. Rockefeller" loading="lazy" width="360" height="360">
+          <span class="mood" hidden></span>
+        </button>
+        <div class="role">The Oilman</div>
+        <h3 class="name">John D. Rockefeller</h3>
+        <div class="years">1839–1937</div>
+        <p class="bio">Built Standard Oil on refining, pipelines and railroad rebates, then bought out his rivals.</p>
+      </figure>
+      <figure class="titan" data-id="andrew_carnegie" data-moods="pleased guarded anxious angry">
+        <button type="button" aria-label="Andrew Carnegie: change his mood">
+          <img src="/media/titans/andrew_carnegie_neutral.jpg" alt="Portrait of Andrew Carnegie" loading="lazy" width="360" height="360">
+          <span class="mood" hidden></span>
+        </button>
+        <div class="role">The Steelmaker</div>
+        <h3 class="name">Andrew Carnegie</h3>
+        <div class="years">1835–1919</div>
+        <p class="bio">Makes Bessemer steel in Pittsburgh, and keeps it cheap by driving his men hard.</p>
+      </figure>
+      <figure class="titan" data-id="henry_ford" data-moods="pleased guarded anxious angry">
+        <button type="button" aria-label="Henry Ford: change his mood">
+          <img src="/media/titans/henry_ford_neutral.jpg" alt="Portrait of Henry Ford" loading="lazy" width="360" height="360">
+          <span class="mood" hidden></span>
+        </button>
+        <div class="role">The Machinist</div>
+        <h3 class="name">Henry Ford</h3>
+        <div class="years">1863–1947</div>
+        <p class="bio">A farm boy from Dearborn who became a machinist. He spends his evenings on engines.</p>
+      </figure>
+      <figure class="titan" data-id="harlan_voss" data-moods="pleased guarded anxious angry">
+        <button type="button" aria-label="Harlan Voss: change his mood">
+          <img src="/media/titans/harlan_voss_neutral.jpg" alt="Portrait of Harlan Voss" loading="lazy" width="360" height="360">
+          <span class="mood" hidden></span>
+        </button>
+        <div class="role">The Lender</div>
+        <h3 class="name">Harlan Voss</h3>
+        <div class="years">1848–1921</div>
+        <p class="bio">A Chicago moneylender. He lends quickly and asks few questions, but he never forgets a debt.</p>
+      </figure>
+    </div>
+  </section>
+
+  <section class="feature">
+    <figure class="shot"><img src="/media/laboratory.jpg" alt="The laboratory: the electrical tree from induction and alternating current to the turbo-generator and the storage battery." loading="lazy" width="1920" height="1080"></figure>
+    <div>
+      <div class="label">The Laboratory</div>
+      <h2>Prove every invention in the field</h2>
+      <p>Your scientists research technologies in every field the century opened: electrical, electronics, materials, chemical, manufacturing, transport and computing. They work out principles at the bench. An invention is yours only when it passes a field trial.</p>
+      <p>Each trial costs money and ties up your engineers, and a trial can fail.</p>
+    </div>
+  </section>
+
+  <section class="feature flip">
+    <figure class="shot"><img src="/media/patent-desk.jpg" alt="The Patent Desk: a dynamo's patent drawing with its witnesses' signatures, an envelope, two-cent stamps, an ink pad and a rubber stamp, and a brass chute to Washington." loading="lazy" width="1384" height="794"></figure>
+    <div>
+      <div class="label">The Patent Desk</div>
+      <h2>File your patents by hand, then hire patent clerks to do it for you</h2>
+      <p>An invention is not protected until the Patent Office grants it. You file the application yourself at the patent desk: ink the stamp, seal the envelope and send it down the chute to Washington. Careful work improves its chances at the first examination.</p>
+      <p>Once the company can afford one, a clerk files them for you.</p>
+    </div>
+  </section>
+
+  <section class="feature">
+    <figure class="shot"><img src="/media/drawing-office.jpg" alt="The Drawing Office, 1897: a steam locomotive designed part by part, its driving wheels chosen on a blueprint, with tractive effort, top speed and unit cost on the sheet beside it." loading="lazy" width="1920" height="1080"></figure>
+    <div>
+      <div class="label">The Drawing Office</div>
+      <h2>Design what you build</h2>
+      <p>You design power lines, power stations, locomotives, motor cars, airships, airliners and ships one part at a time. Eight small driving wheels pull harder than four big ones, but the locomotive is slower.</p>
+      <p>Every part you fit changes the unit cost, and that cost goes straight onto your books.</p>
+    </div>
+  </section>
+
+  <section class="feature flip">
+    <figure class="shot"><video autoplay muted loop playsinline preload="metadata" poster="/media/exchange-poster.jpg" width="1280" height="708" aria-label="The Big Board at full speed, May to November 1905: prices ticking down the list and a year's chart of United States Steel scrolling as the stock rises and falls."><source src="/media/exchange.mp4" type="video/mp4"></video></figure>
+    <div>
+      <div class="label">The Big Board</div>
+      <h2>Trade on the New York exchange</h2>
+      <p>The great companies of the day are listed, quoted in eighths of a dollar as they were at the time. Buy into the railroads and the trusts. A panic can take them down with your money in them.</p>
+      <p>You can take your own company public, too.</p>
+    </div>
+  </section>
+
+  <section class="feature">
+    <figure class="shot"><img src="/media/courier.jpg" alt="The New-York Courier, 1 August 1892: The Barges at Homestead, with portraits of Henry Clay Frick and Andrew Carnegie clipped beside the column." loading="lazy" width="890" height="624"></figure>
+    <div>
+      <div class="label">The Papers</div>
+      <h2>Read the century as it happens</h2>
+      <p>The New-York Courier reports on the country and on your company every year of the campaign. Radio and then television join it once they are invented. Click a name in a story to read about that person.</p>
+      <p>History follows its real course unless your decisions change it. You choose whether to work with Tesla, how to vote in 1896, and how to answer the government when war comes.</p>
+    </div>
+  </section>
+
+  <section class="feature flip">
+    <figure class="shot"><video autoplay muted loop playsinline preload="metadata" poster="/media/country-seasons-poster.jpg" width="1280" height="658" aria-label="A year on the map in a few seconds: summer, autumn, the winter snow sweeping south and back, with night falling and the towns lighting up every few seconds."><source src="/media/country-seasons.mp4" type="video/mp4"></video></figure>
+    <div>
+      <div class="label">The Country</div>
+      <h2>A continent that keeps time</h2>
+      <p>The map is the United States. The seasons change, towns grow with each census, and at night the lights come on wherever electricity has reached.</p>
+      <p>Land prices differ from place to place, so where you build is a business decision.</p>
+    </div>
+  </section>
+
+  <section class="times" aria-labelledby="times-title">
+    <div class="kicker">The Eras</div>
+    <h2 id="times-title">The game changes with the times</h2>
+    <p class="lede">The interface changes with the decades. It turns khaki when the Great War starts, prussian blue after the armistice, olive drab in the Second World War and phosphor green in the 1950s. The stock chart changes with it. Pick a year to see how each era draws it.</p>
+    <div class="era-tabs" role="tablist" aria-label="Eras">
+      <button role="tab" id="era-tab-1913" aria-controls="era-stage" aria-selected="true" data-era="0">1913</button>
+      <button role="tab" id="era-tab-1938" aria-controls="era-stage" aria-selected="false" data-era="1" tabindex="-1">1938</button>
+      <button role="tab" id="era-tab-1950" aria-controls="era-stage" aria-selected="false" data-era="2" tabindex="-1">1950</button>
+      <button role="tab" id="era-tab-1992" aria-controls="era-stage" aria-selected="false" data-era="3" tabindex="-1">1992</button>
+    </div>
+    <div class="era-stage" id="era-stage" role="tabpanel" aria-live="polite">
+      <img class="on" src="/media/eras/exchange-1913.jpg" alt="The Exchange in 1913: Bethlehem Steel's year drawn by a brass rack, a steel drum and a ball-and-disc integrator, in a case of blackened iron and gilt." width="1000" height="862">
+      <img src="/media/eras/exchange-1938.jpg" alt="The Exchange in 1938: Radio Corporation of America's price written by a pen clamped to a cord over two red pulleys, in an olive-drab case." loading="lazy" width="1000" height="862">
+      <img src="/media/eras/exchange-1950.jpg" alt="The Exchange in 1950: Standard Oil of New Jersey as a green phosphor trace on an oscilloscope, with time-base and dollars-per-division knobs." loading="lazy" width="1000" height="862">
+      <img src="/media/eras/exchange-1992.jpg" alt="The Exchange in 1992: Union Pacific as weekly red and green candles on a trading terminal, the last price tagged on the axis." loading="lazy" width="1000" height="862">
+    </div>
+    <p class="era-caption" id="era-caption"></p>
+  </section>
+
+  <section class="questions" id="questions" aria-labelledby="questions-title">
+    <div class="kicker">Questions</div>
+    <h2 id="questions-title">Common questions</h2>
+
+    <h3>What kind of game is it?</h3>
+    <p>It is an economic strategy game: grand strategy meets industrial tycoon. You found a company in January 1890 and run it through financial panics, two world wars and the computer age. Your competitors are the companies that ran the real century.</p>
+
+    <h3>When does it come out?</h3>
+    <p>It comes out in Early Access on Steam later in 2026. The Steam page will open first and give the date. <a href="/contact/?about=steam">Write to us</a> and we will email you once, on the day it opens.</p>
+
+    <h3>Is it historical?</h3>
+    <p>Yes. By default the century follows real history, with the real companies, inventors and bankers, the panics and the wars. The newspaper reports them as they happen. History changes only when your decisions change it.</p>
+
+    <h3>What does it run on?</h3>
+    <p>It runs on Windows 10 or 11, with a keyboard and mouse. The full system requirements will be on the Steam page. Single-player needs no internet connection.</p>
+
+    <h3>Is there multiplayer, or mod support?</h3>
+    <p>Yes, both, from the first day of Early Access.</p>
+
+    <h3>What do I get in Early Access?</h3>
+    <p>You get a complete campaign from 1890 that you can play for as long as you like. Updates during Early Access are free for everyone who owns the game.</p>
+
+    <h3>Who makes it?</h3>
+    <p>Prime Mover Industries, a one-person independent studio. Press and creators can find facts, screenshots and videos in the <a href="/press/">press kit</a>.</p>
+  </section>
+  </main>
+
+  <footer>
+    <span class="studio-name">Prime Mover Industries</span>
+    <nav aria-label="Footer"><a href="/press/">Press kit</a><a href="#questions">Questions</a><a href="/support/">Support</a><a href="/contact/">Contact</a></nav>
+    An independent studio · <a href="mailto:hello@primemoverindustries.com">hello@primemoverindustries.com</a><br>
+    © 2026 Prime Mover Industries. Titans of Progress is in development; footage and screens are in-game, from builds of September and October 2026.
+  </footer>
+</div>
+<script>
+  (() => {
+    const captions = [
+      '<b>The Exchange in 1913.</b> A brass rack and integrator move the pen as the price changes.',
+      '<b>The Exchange in 1938.</b> The pen is clamped to a cord, and two pulleys turn as the price moves.',
+      '<b>The Exchange in 1950.</b> Phosphor on dark glass. The beam glides to each day’s close and the trace fades behind it.',
+      '<b>The Exchange in 1992.</b> The terminal draws red and green candles, or a line if you prefer.',
+    ];
+    const tabs = [...document.querySelectorAll('.era-tabs button')];
+    const shots = [...document.querySelectorAll('.era-stage img')];
+    const caption = document.getElementById('era-caption');
+    let at = 0, timer = null;
+    const show = i => {
+      at = i;
+      tabs.forEach((t, k) => { t.setAttribute('aria-selected', k === i); t.tabIndex = k === i ? 0 : -1; });
+      shots.forEach((img, k) => img.classList.toggle('on', k === i));
+      caption.innerHTML = captions[i];
+    };
+    const stop = () => { clearInterval(timer); timer = null; };
+    tabs.forEach((t, i) => {
+      t.addEventListener('click', () => { stop(); show(i); });
+      t.addEventListener('keydown', e => {
+        const step = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (step) { stop(); const n = (at + step + tabs.length) % tabs.length; show(n); tabs[n].focus(); e.preventDefault(); }
+      });
+    });
+    show(0);
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const stage = document.getElementById('era-stage');
+      new IntersectionObserver((seen, watcher) => {
+        if (seen.some(x => x.isIntersecting)) { watcher.disconnect(); timer = setInterval(() => show((at + 1) % tabs.length), 4500); }
+      }, { threshold: 0.4 }).observe(stage);
+    }
+  })();
+
+  document.querySelectorAll('.titan').forEach(card => {
+    const id = card.dataset.id, moods = card.dataset.moods.split(' ');
+    const img = card.querySelector('img'), tag = card.querySelector('.mood');
+    let at = -1, touched = false;
+    const show = i => {
+      at = i;
+      img.src = '/media/titans/' + id + '_' + (i < 0 ? 'neutral' : moods[i]) + '.jpg';
+      tag.hidden = i < 0; tag.textContent = i < 0 ? '' : moods[i];
+    };
+    const btn = card.querySelector('button');
+    btn.addEventListener('mouseenter', () => { if (!touched && at < 0) show(0); });
+    btn.addEventListener('mouseleave', () => { if (!touched) show(-1); });
+    btn.addEventListener('click', () => { touched = true; show(at + 1 < moods.length ? at + 1 : -1); });
+    const warm = () => moods.forEach(m => { const p = new Image(); p.src = '/media/titans/' + id + '_' + m + '.jpg'; });
+    ('requestIdleCallback' in window) ? requestIdleCallback(warm) : setTimeout(warm, 1500);
+  });
+</script>
+</body>
+</html>
